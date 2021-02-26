@@ -7,10 +7,15 @@
 }
 /* HELPER CLASS */
 .center-text {text-align: center;}
+.container {
+  margin: 0 auto;
+  max-width: 68.75rem;
+  width: 100%;
+}
 
 /* MAIN */
 .header,
-.footer {padding: 0.9375rem;}
+.footer {padding: 1.875rem;}
 
 .nav-item,
 .footer-list {list-style: none;}
@@ -19,13 +24,11 @@
 .wrapper-footer-lists {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 6.25rem;
-  max-width: 68.75rem;
-  width: 100%;
 }
 
 
-.header {}
+
+/* HEADER */
 
 .m-nav-link {
   color: #111;
@@ -42,8 +45,25 @@
 
 .m-nav-link:hover {text-decoration: underline;}
 
-.footer {background-color: #0f325afc;}
+/* FOOTER */
+.footer {
+  background-color: #0f325afc;
+  color: #fff;
+}
 
+.footer-list h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 
+.wrapper-footer-lists {margin-bottom: 6.25rem;}
 
 .f-link {color: #fff;}
+
+.copyright {font-size: .875rem;}
+
+.copyright a {
+  text-decoration: none;
+  color: #fff;
+}
+.copyright a:hover {text-decoration: underline;}
