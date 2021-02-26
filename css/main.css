@@ -5,3 +5,45 @@
   outline: none;
   padding: 0;
 }
+/* HELPER CLASS */
+.center-text {text-align: center;}
+
+/* MAIN */
+.header,
+.footer {padding: 0.9375rem;}
+
+.nav-item,
+.footer-list {list-style: none;}
+
+.navbar,
+.wrapper-footer-lists {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 6.25rem;
+  max-width: 68.75rem;
+  width: 100%;
+}
+
+
+.header {}
+
+.m-nav-link {
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.menu {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {margin-right: 20px;}
+
+.m-nav-link:hover {text-decoration: underline;}
+
+.footer {background-color: #0f325afc;}
+
+
+
+.f-link {color: #fff;}
