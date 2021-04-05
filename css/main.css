@@ -43,6 +43,28 @@
 
 .m-nav-link:hover {text-decoration: underline;}
 
+/* CARD STRUCTURE */
+.card-wrapper {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  margin: 0 auto;
+  row-gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 242px;
+}
+
+.nome-prod {}
+
+.preco-prod {
+  font-size: 
+  font-weight: bolder;
+}
+
 /* FOOTER */
 .footer {
   background-color: #0f325afc;
@@ -67,8 +89,6 @@
 .social-icons li {display: inline;}
 
 .social-icons li:not(:last-child) {margin-right: 20px;}
-
-
 
 .f-link {
   color: #fff;
