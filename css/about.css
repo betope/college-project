@@ -1,0 +1,27 @@
+.text-about,
+.wrapper-img {
+  margin: 0 auto;
+  max-width: 59.75rem;
+}
+
+.about {
+  padding: 100px 15px;
+}
+
+.section-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.wrapper-img {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.big-img {margin-right: 30px;}
+.small-img {
+  display: grid;
+  grid-gap: 26px;
+  grid-template-columns: 240px 240px;
+}
