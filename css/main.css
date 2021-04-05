@@ -14,8 +14,7 @@
 }
 
 /* MAIN */
-.header,
-.footer {padding: 1.875rem;}
+.header {padding: 1.875rem;}
 
 .nav-item,
 .footer-list {list-style: none;}
@@ -49,7 +48,9 @@
   display: grid;
   grid-template-columns: 240px 240px 240px 240px;
   margin: 0 auto;
+  max-width: 68.75rem;
   row-gap: 20px;
+  width: 100%;
 }
 
 .card {
@@ -58,17 +59,23 @@
     width: 242px;
 }
 
-.nome-prod {}
+.nome-prod {
+  font-weight: 700;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
 
 .preco-prod {
-  font-size: 
-  font-weight: bolder;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 /* FOOTER */
 .footer {
   background-color: #0f325afc;
   color: #fff;
+  padding: 3.125rem;
 }
 
 .wrapper-footer-lists {
