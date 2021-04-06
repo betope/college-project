@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="css/about.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-      <title>Sobre nós - Salumeria Gioia</title>
+      <title>Fazer encomenda - Salumeria Gioia</title>
     </head>
     <body>
       <header class="header">
@@ -16,7 +16,7 @@
             <ul class="menu">
               <li class="nav-item"><a class="m-nav-link" href="index.html">home</a></li>
               <li class="nav-item"><a class="m-nav-link" href="#">produtos</a></li>
-              <li class="nav-item"><a class="m-nav-link" href="encomendar.html">encomendar</a></li>
+              <li class="nav-item"><a class="m-nav-link" href="encmendar.html">encomendar</a></li>
               <li class="nav-item"><a class="m-nav-link" href="sobre.html">quem somos</a></li>
               <li class="nav-item"><a class="m-nav-link" href="#">FAQ</a></li>
               <li class="nav-item"><a class="m-nav-link" href="#">contato</a></li>
@@ -26,36 +26,34 @@
       </header>
         <section class="about">
           <header class="section-header">
-            <h2 class="center-text">Quem Somos</h2>
+            <h2 class="center-text">Fazer encomenda</h2>
           </header>
-          <div class="wrapper-img">
-            <div class="big-img">
-              <img src="http://placehold.jp/420x370.png" alt="Placeholder image">
-            </div>
-            <div class="small-img">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-            </div>
-          </div>
-          <div class="text-about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed commodo metus. Etiam a metus tristique enim viverra pharetra
-ac vitae est. Donec semper nec purus in blandit. Ut luctus consequat mauris, a gravida orci lobortis vel. Integer enim lectus, egestas
-laoreet elementum at, luctus eget orci. Cras eget gravida ante, ac scelerisque risus. Morbi enim massa, fringilla id velit vel,
-malesuada iaculis enim. In mollis commodo enim, id congue mi luctus at. Mauris porttitor felis a ligula ornare, eu egestas sapien semper.
-Praesent sit amet volutpat ex. Vivamus rutrum arcu a purus vulputate fermentum at quis mi.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed commodo metus. Etiam a metus tristique enim viverra pharetra
-ac vitae est. Donec semper nec purus in blandit. Ut luctus consequat mauris, a gravida orci lobortis vel. Integer enim lectus, egestas
-laoreet elementum at, luctus eget orci. Cras eget gravida ante, ac scelerisque risus. Morbi enim massa, fringilla id velit vel,
-malesuada iaculis enim. In mollis commodo enim, id congue mi luctus at. Mauris porttitor felis a ligula ornare, eu egestas sapien semper.
-Praesent sit amet volutpat ex. Vivamus rutrum arcu a purus vulputate fermentum at quis mi.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed commodo metus. Etiam a metus tristique enim viverra pharetra
-ac vitae est. Donec semper nec purus in blandit. Ut luctus consequat mauris, a gravida orci lobortis vel. Integer enim lectus, egestas<p>
-laoreet elementum at, luctus eget orci. Cras eget gravida ante, ac scelerisque risus. Morbi enim massa, fringilla id velit vel,
-malesuada iaculis enim. In mollis commodo enim, id congue mi luctus at. Mauris porttitor felis a ligula ornare, eu egestas sapien semper.
-Praesent sit amet volutpat ex. Vivamus rutrum arcu a purus vulputate fermentum at quis mi.</p>
-          </div>
+          <form class="form-encomenda" action="" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Escreva seu nome">
+            <label for="nome">Endereço</label>
+            <input type="text" name="endereco" placeholder="Escreva seu endereço">
+            <label for="nome">Número</label>
+            <input type="number" name="num-endereco" placeholder="Ex: 1234">
+            <label for="nome">CEP</label>
+            <input type="text" name="cep" placeholder="00000000">
+            <label for="nome">Cidade/Estado</label>
+            <select class="" name="">
+              <option value="#">Selecione</option>
+              <option value="">São Paulo</option>
+            </select>
+            <label for="nome">Telefone</label>
+            <input type="phone" name="telefone" placeholder="Ex: 11999990000">
+            <label for="nome">Email</label>
+            <input type="email" name="email" placeholder="Insira seu email">
+            <label for="nome">Selecionar produto</label>
+            <select class="" name="">
+              <option value="#">Selecione</option>
+              <option value="">Linguiça recheada</option>
+            </select>
+            <label for="nome">Quantidade</label>
+            <input type="number" name="" placeholder="Ex: 3">
+          </form>
         </section>
         <footer class="footer">
             <div class="wrapper-footer-lists container">
