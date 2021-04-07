@@ -1,0 +1,19 @@
+.form-encomenda {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.field-container {
+  display: flex;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 35px;
+}
