@@ -1,19 +1,59 @@
 .form-encomenda {
-  max-width: 760px;
   margin: 0 auto;
+  padding: 0 15px;
+  max-width: 760px;
+  width: 100%;
 }
 
 .field-container {
   display: flex;
+  flex-direction: column;
 }
 
 .input-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
-input {
+label {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+input, select {
   border: 1px solid #ccc;
   border-radius: 5px;
   height: 35px;
+  max-width: 100%;
+}
+
+input:not([type=submit]) {padding-left: 8px;}
+
+.btn-submit {
+  background: #00cc66;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0 12px;
+  transition: ease .7s;
+  text-transform: uppercase;
+}
+.btn-submit:hover {
+  background: #00994d;
+}
+
+@media only screen and (min-width: 576px) {
+  .field-container {
+    flex-direction: row;
+  }
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 200px 150px;
+  column-gap: 20px;
+}
+
+
 }
