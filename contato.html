@@ -3,10 +3,10 @@
     <head>
       <meta charset="utf-8">
       <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/about.css">
+      <link rel="stylesheet" href="css/contato.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-      <title>Sobre nós - Salumeria Gioia</title>
+      <title>Contato - Salumeria Gioia</title>
     </head>
     <body>
       <header class="header">
@@ -24,37 +24,28 @@
           </nav>
         </div>
       </header>
-        <section class="about">
+        <section class="contato">
           <header class="section-header">
-            <h2 class="center-text">Quem Somos</h2>
+            <h2 class="center-text">Contato</h2>
           </header>
-          <div class="wrapper-img">
-            <div class="big-img">
-              <img src="http://placehold.jp/420x370.png" alt="Placeholder image">
-            </div>
-            <div class="small-img">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-              <img src="http://placehold.jp/240x170.png" alt="Placeholder image">
-            </div>
-          </div>
-          <div class="text-about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed commodo metus. Etiam a metus tristique enim viverra pharetra
-ac vitae est. Donec semper nec purus in blandit. Ut luctus consequat mauris, a gravida orci lobortis vel. Integer enim lectus, egestas
-laoreet elementum at, luctus eget orci. Cras eget gravida ante, ac scelerisque risus. Morbi enim massa, fringilla id velit vel,
-malesuada iaculis enim. In mollis commodo enim, id congue mi luctus at. Mauris porttitor felis a ligula ornare, eu egestas sapien semper.
-Praesent sit amet volutpat ex. Vivamus rutrum arcu a purus vulputate fermentum at quis mi.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed commodo metus. Etiam a metus tristique enim viverra pharetra
-ac vitae est. Donec semper nec purus in blandit. Ut luctus consequat mauris, a gravida orci lobortis vel. Integer enim lectus, egestas
-laoreet elementum at, luctus eget orci. Cras eget gravida ante, ac scelerisque risus. Morbi enim massa, fringilla id velit vel,
-malesuada iaculis enim. In mollis commodo enim, id congue mi luctus at. Mauris porttitor felis a ligula ornare, eu egestas sapien semper.
-Praesent sit amet volutpat ex. Vivamus rutrum arcu a purus vulputate fermentum at quis mi.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed commodo metus. Etiam a metus tristique enim viverra pharetra
-ac vitae est. Donec semper nec purus in blandit. Ut luctus consequat mauris, a gravida orci lobortis vel. Integer enim lectus, egestas<p>
-laoreet elementum at, luctus eget orci. Cras eget gravida ante, ac scelerisque risus. Morbi enim massa, fringilla id velit vel,
-malesuada iaculis enim. In mollis commodo enim, id congue mi luctus at. Mauris porttitor felis a ligula ornare, eu egestas sapien semper.
-Praesent sit amet volutpat ex. Vivamus rutrum arcu a purus vulputate fermentum at quis mi.</p>
+          <form class="form-encomenda" action="" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Insira seu nome" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Insira seu email" required>
+            <label for="msg">Mensagem</label>
+            <textarea name="name" placeholder="Escreva sua mensagem" required></textarea>
+            <input class="btn-submit" type="submit" name="submit" value="Enviar">
+          </form>
+          <div class="contact-info">
+            <h3>Entre em contato conosco</h3>
+            <p>(11) 2200-3600</p>
+            <p>(11) 2200-3600</p>
+            <p><a href="#">contato@salumeriagioia.com.br</a></p>
+
+            <h3>Horários de atendimento</h3>
+            <p>Segunda a Sexta: das 8:00 às 21:00</p>
+            <p>Sábado, Domingo e feriados: das 8:00 às 12:00</p>
           </div>
         </section>
         <footer class="footer">

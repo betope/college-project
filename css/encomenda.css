@@ -1,9 +1,11 @@
+.encomenda {padding: 100px 20px;}
+
 .form-encomenda {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 760px;
+  max-width: 690px;
   width: 100%;
 }
+
 
 .field-container {
   display: flex;
@@ -19,6 +21,11 @@
 label {
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+label::after {
+  color: #fd5555;
+  content: ' *';
 }
 
 input, select {
@@ -44,16 +51,24 @@ input:not([type=submit]) {padding-left: 8px;}
   background: #00994d;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 720px) {
   .field-container {
     flex-direction: row;
   }
 
-.grid {
-  display: grid;
-  grid-template-columns: 300px 200px 150px;
-  column-gap: 20px;
-}
-
+  .grid {
+    display: grid;
+    grid-template-columns: 300px 200px 150px;
+    column-gap: 20px;
+  }
+  .col-2 {
+    grid-auto-flow: row;
+  }
+  .cep-num-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cep,
+  .numero {width: 88px;}
 
 }
