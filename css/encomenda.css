@@ -37,19 +37,7 @@ input, select {
 
 input:not([type=submit]) {padding-left: 8px;}
 
-.btn-submit {
-  background: #00cc66;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 700;
-  padding: 0 12px;
-  transition: ease .7s;
-  text-transform: uppercase;
-}
-.btn-submit:hover {
-  background: #00994d;
-}
+
 
 @media only screen and (min-width: 720px) {
   .field-container {
