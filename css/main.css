@@ -9,7 +9,7 @@
 /* HELPER CLASS */
 .center-text {text-align: center;}
 
-.container {margin: 100px 20px;}
+.container {padding: 100px 20px;}
 
 .resp-img {
   height: 100%;
@@ -110,7 +110,8 @@
 .wrapper-footer-lists {
   display: flex;
   flex-direction: column;
-  margin-bottom: 6.25rem;
+  margin: 0 auto 6.25rem;
+  max-width: 1100px;
 }
 
 .footer-list {text-align: center;}
