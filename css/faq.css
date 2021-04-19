@@ -1,0 +1,13 @@
+.faq {
+  margin: 0 auto;
+  max-width: 760px;
+}
+.answer {display: none;}
+
+.answer,
+.question  {padding: 15px;}
+
+.question  {
+  background: #ccc;
+  cursor: pointer;
+}
