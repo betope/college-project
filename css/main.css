@@ -146,6 +146,32 @@
 }
 .copyright a:hover {text-decoration: underline;}
 
+.modal {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 5px;
+  color: #111;
+  max-width: 700px;
+  padding: 50px;
+}
+
+.close-modal {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 600px) {
   .wrapper-footer-lists {
