@@ -162,9 +162,16 @@
   background: #fff;
   border-radius: 5px;
   color: #111;
-  max-width: 700px;
+  max-width: 750px;
   padding: 50px;
 }
+
+.modal-content h3 {
+  font-size: 1.5 rem;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li:not(:last-child) {margin-bottom: 20px;}
 
 .close-modal {
   cursor: pointer;
