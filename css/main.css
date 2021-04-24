@@ -149,7 +149,7 @@
 .modal {
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
-  display: none;
+  display: flex;
   height: 100vh;
   justify-content: center;
   left: 0;
@@ -176,8 +176,12 @@
 .close-modal {
   cursor: pointer;
   display: flex;
+  font-size: 1.2rem;
+  font-weight: bolder;
   justify-content: flex-end;
 }
+
+.troca {margin-bottom: 100px;}
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 600px) {
