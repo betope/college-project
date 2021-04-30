@@ -24,7 +24,9 @@
 .navbar {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .m-nav-link {
