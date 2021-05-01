@@ -16,12 +16,22 @@
   width: 100%;
 }
 
+:root {
+  --red: #98101c;
+  --gold: #796334;
+  --green: #485b2e;
+}
+
 /* MAIN */
 .nav-item,
 .footer-list {list-style: none;}
 
 /* HEADER */
-.navbar {
+header {
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+.navbar { 
   align-items: center;
   display: flex;
   justify-content: space-between;
