@@ -37,6 +37,11 @@ input, select {
 
 input:not([type=submit]) {padding-left: 8px;}
 
+.pricebar {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
 
 
 @media only screen and (min-width: 720px) {
