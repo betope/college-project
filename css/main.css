@@ -18,7 +18,7 @@
 
 :root {
   --red: #98101c;
-  /* --gold: #796334; */
+  --dark-gold: #796334;
   --gold: #fffefb;
   --green: #485b2e;
 }
@@ -85,7 +85,7 @@
 .card:not(:last-child) {margin-bottom: 25px;}
 
 .nome-prod {
-  color: var(--red);
+  color: var(--dark-gold);
   font-weight: 700;
   margin: 10px 0;
   text-transform: uppercase;
