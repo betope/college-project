@@ -1,5 +1,8 @@
 <?php
   include(php/connect.php);
+
+  $consult = "SELECT nome, ingredientes FROM produtos";
+  $cdata = $mysqli->query($consult) or die ($mysqli->error);
 ?>
 <!DOCTYPE html>
   <html lang="pt-br" dir="ltr">
@@ -34,11 +37,13 @@
           </header>
           <div class="info-prod">
             <div class="produto">
-              <img class="resp-img" src="img/" alt="Placeholder image">
+              <img class="resp-img" src="img/linguica.jpg" alt="Placeholder image">
               <div class="prod-desc">
-                <h3></h3>
+                <?php while($dados = $con->fetch_array()){?>
+                <h3><?php echo $dados["nome"]; ?></h3>
                 <p></p>
-                <p></p>
+                <p><?php echo $dados["ingredientes"]; ?></p>
+              <?php}?>
               </div>
             </div>
             <hr>
