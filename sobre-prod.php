@@ -1,4 +1,7 @@
-  <!DOCTYPE html>
+<?php
+  include(php/connect.php);
+?>
+<!DOCTYPE html>
   <html lang="pt-br" dir="ltr">
     <head>
       <meta charset="utf-8">
@@ -34,6 +37,7 @@
               <img class="resp-img" src="img/" alt="Placeholder image">
               <div class="prod-desc">
                 <h3></h3>
+                <p></p>
                 <p></p>
               </div>
             </div>
