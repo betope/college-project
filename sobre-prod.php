@@ -1,9 +1,17 @@
 <?php
-  include(php/connect.php);
+  $host = "localhost";
+  $user = "u653934600_gioia";
+  $password = "@Gioia2021";
+  $dbname = "u653934600_gioiaprodutos";
+
+  $mysqli = new mysqli($host, $user, $password, $dbname);
+  if ($mysqli->connect_errno)
+    echo "Falha na conexão: (".$mysqli->connect_errno.") ".$mysqli->connect_error;
 
   $consult = "SELECT nome, ingredientes FROM produtos";
   $cdata = $mysqli->query($consult) or die ($mysqli->error);
 ?>
+
 <!DOCTYPE html>
   <html lang="pt-br" dir="ltr">
     <head>
@@ -22,7 +30,7 @@
           <nav class="navigation">
             <ul class="menu">
               <li class="nav-item"><a class="m-nav-link" href="index.html">home</a></li>
-              <li class="nav-item"><a class="m-nav-link" href="sobre-prod.html">produtos</a></li>
+              <li class="nav-item"><a class="m-nav-link" href="sobre-prod.php">produtos</a></li>
               <li class="nav-item"><a class="m-nav-link" href="sobre.html">quem somos</a></li>
               <li class="nav-item"><a class="m-nav-link" href="faq.html">FAQ</a></li>
               <li class="nav-item"><a class="m-nav-link" href="contato.html">contato</a></li>
@@ -39,11 +47,10 @@
             <div class="produto">
               <img class="resp-img" src="img/linguica.jpg" alt="Placeholder image">
               <div class="prod-desc">
-                <?php while($dados = $con->fetch_array()){?>
+                <?php while($dados = $cdata->fetch_array()){?>
                 <h3><?php echo $dados["nome"]; ?></h3>
                 <p></p>
                 <p><?php echo $dados["ingredientes"]; ?></p>
-              <?php}?>
               </div>
             </div>
             <hr>
@@ -77,7 +84,7 @@
               <ul class="footer-list">
                 <h3>institucional</h3>
                 <li><a class="f-link" href="sobre.html">Quem somos</a></li>
-                <li><a class="f-link" href="sobre-prod.html">Sobre os produtos</a></li>
+                <li><a class="f-link" href="sobre-prod.php">Sobre os produtos</a></li>
               </ul>
               <ul class="footer-list">
                 <h3>produtos</h3>
@@ -106,3 +113,4 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" async=""></script>
     </body>
   </html>
+<?php }?>
