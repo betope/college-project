@@ -8,8 +8,17 @@
   if ($mysqli->connect_errno)
     echo "Falha na conexão: (".$mysqli->connect_errno.") ".$mysqli->connect_error;
 
-  $consult = "SELECT nome, ingredientes FROM produtos";
-  $cdata = $mysqli->query($consult) or die ($mysqli->error);
+  $consult = "SELECT * FROM produtos WHERE id = 1";
+  $linguica = $mysqli->query($consult) or die ($mysqli->error);
+
+  $consult = "SELECT * FROM produtos WHERE id = 2";
+  $mortadela = $mysqli->query($consult) or die ($mysqli->error);
+
+  $consult = "SELECT * FROM produtos WHERE id = 3";
+  $salame = $mysqli->query($consult) or die ($mysqli->error);
+
+  $consult = "SELECT * FROM produtos WHERE id = 4";
+  $cotechino = $mysqli->query($consult) or die ($mysqli->error);
 ?>
 
 <!DOCTYPE html>
@@ -40,20 +49,73 @@
       </header>
         <section class="produtos-info container">
           <header class="section-header">
-            <h2 class="center-text">Saiba mais nossos produtos</h2>
-            <p class="center-text">Saiba mais sobre os ingredientes que usamos em cada produto e nossos processos de fabricação.</p>
+            <h2 class="center-text">Saiba mais sobre nossos produtos</h2>
+            <p class="center-text">Saiba mais sobre os ingredientes que são usados para fabricar os nossos produtos.</p>
           </header>
           <div class="info-prod">
             <div class="produto">
               <img class="resp-img" src="img/linguica.jpg" alt="Placeholder image">
               <div class="prod-desc">
-                <?php while($dados = $cdata->fetch_array()){?>
+                <?php while($dados = $linguica->fetch_array()){?>
                 <h3><?php echo $dados["nome"]; ?></h3>
-                <p></p>
-                <p><?php echo $dados["ingredientes"]; ?></p>
+                <p>
+                  <strong><span class="desc">Descrição do produto</span> </strong>
+                  <br>
+                  <?php echo $dados["descricao"]; ?>
+                </p>
+                <br>
+                <p><strong>Ingredientes: </strong><?php echo $dados["ingredientes"]; ?></p>
+                <?php }?>
               </div>
             </div>
             <hr>
+            <div class="produto">
+              <img class="resp-img" src="img/mortadela.jpg" alt="Placeholder image">
+              <div class="prod-desc">
+                <?php while($dados = $mortadela->fetch_array()){?>
+                <h3><?php echo $dados["nome"]; ?></h3>
+                <p>
+                  <strong><span class="desc">Descrição do produto</span> </strong>
+                  <br>
+                  <?php echo $dados["descricao"]; ?>
+                </p>
+                <br>
+                <p><strong>Ingredientes: </strong><?php echo $dados["ingredientes"]; ?></p>
+                <?php }?>
+              </div>
+            </div>
+            <hr>
+            <div class="produto">
+              <img class="resp-img" src="img/salame.jpg" alt="Placeholder image">
+              <div class="prod-desc">
+                <?php while($dados = $salame->fetch_array()){?>
+                <h3><?php echo $dados["nome"]; ?></h3>
+                <p>
+                  <strong><span class="desc">Descrição do produto</span> </strong>
+                  <br>
+                  <?php echo $dados["descricao"]; ?>
+                </p>
+                <br>
+                <p><strong>Ingredientes: </strong><?php echo $dados["ingredientes"]; ?></p>
+                <?php }?>
+              </div>
+            </div>
+            <hr>
+            <div class="produto">
+              <img class="resp-img" src="img/cotechino.jpg" alt="Placeholder image">
+              <div class="prod-desc">
+                <?php while($dados = $cotechino->fetch_array()){?>
+                <h3><?php echo $dados["nome"]; ?></h3>
+                <p>
+                  <strong><span class="desc">Descrição do produto</span> </strong>
+                  <br>
+                  <?php echo $dados["descricao"]; ?>
+                </p>
+                <br>
+                <p><strong>Ingredientes: </strong><?php echo $dados["ingredientes"]; ?></p>
+                <?php }?>
+              </div>
+            </div>
           </div>
         </section>
         <footer class="footer">
@@ -113,4 +175,3 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" async=""></script>
     </body>
   </html>
-<?php }?>
